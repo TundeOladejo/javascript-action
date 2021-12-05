@@ -50,12 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Merge
     steps:
-    - name: PR Merge Bot
-      uses: squalrus/merge-bot@v0.4.5
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        test: true
-        reviewers: true
-        checks_enabled: true
-        method: squash
-        delete_source_branch: true
+      - name: auto-pull-request-merge
+        # You may pin to the exact commit or the version.
+        # uses: KeisukeYamashita/auto-pull-request-merge@68fa2d9d8e449e217aa37bda2e51e3e86ace3bfb
+        uses: KeisukeYamashita/auto-pull-request-merge@v1.0.6
