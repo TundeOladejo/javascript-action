@@ -46,6 +46,13 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
+  whitespace-check:
+    name: Find Trailing Whitespace In Markdown
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ocular-d/trailing-spaces@0.0.2
+      
   merge:
     runs-on: ubuntu-latest
     name: Merge
