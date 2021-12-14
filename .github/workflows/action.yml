@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ocular-d/trailing-spaces@0.0.2
+      - uses: ocular-d/trailing-spaces@main
       
   merge:
     runs-on: ubuntu-latest
